@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<style>
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#main{
+ margin: 50px 300px;
+ flex-wrap: wrap;
+ border: 1px solid rgb(25, 84, 161);
+ align-items: center;
+}
+
+#form{
+ background-color: rgb(66, 24, 24);
+ width: 100%;
+ height: 100%;
+ font-family: "Poppins", sans-serif;
+ border: 1px solid rgb(255, 255, 255);
+}
+
+
+#conference{
+ margin-bottom: 20px;
+ text-align: center;
+ color:#fff;
+}
+#GUEST{
+ margin-bottom: 20px;
+ text-align: center;
+ color:#fff;
+}
+#Please{
+margin-bottom: 20x;
+ text-align: center;
+ color: #fff; ;
+}
+#submitbutton{
+ padding: 10px 30px;
+ background-color:#000 ;
+ color: white;
+ border-radius: 20px;
+ text-align: center;
+ font-family: "Poppins", sans-serif;
+ border: none;
+ transition: .5s;
+ cursor: pointer;
+ margin-left: 60px;
+}
+#submitbutton:hover{
+ transform: scale(1.1);
+}
+#firstname{
+ padding: 10px 10px 10px 10px;
+ margin-left: 80px;
+ background-color: rgb(154, 154, 240);
+ 
+ 
+}
+#left label{
+  color: #fff;
+}
+
+#email{
+
+ padding: 10px 10px 10px 10px ;
+ margin-left:70px;
+ width: 425px;
+ margin-top: 20px;
+ 
+}
+
+#country{
+ padding: 10px 10px 10px 10px;
+ margin-left: 10px;
+ width: 80px;
+ 
+}
+
+#number{
+ padding: 10px 10px 10px 10px ;
+ width: 340px; 
+ 
+}
+
+#address{
+ padding: 10px 10px 10px 10px ;
+ width: 425px;
+ margin-left: 65px;
+ 
+}
+
+#state{
+ padding: 10px 10px 10px 10px ;
+ width: 170px;
+ 
+}
+
+#street{
+ padding: 10px 10px 10px 10px ;
+ width: 430px;
+ margin-left: 75px;
+
+}
+
+#city{
+ padding: 10px 10px 10px 10px ;
+ width: 150px;
+ margin-left: 95px;
+
+}
+
+#code{
+ padding: 10px 10px 10px 10px ;
+ width: 200px;
+ margin-left:70px ;
+ 
+}
+
+#left{
+ padding-left: 30px;
+ margin: 100px ;
+ margin-bottom: 10px;
+}
+
+#firstlast{
+ display: flex;
+ 
+}
+
+#addressall{
+ display: flex;
+ 
+}
+
+#addresslast{
+ display: flex;
+ 
+}
+#number1{
+ margin-top: 20px; 
+
+}
+#state{
+ margin-left: 20px;
+ 
+}
+#sta{
+ margin-left: 20px;
+ 
+}
+#button{
+ margin-left:200px;
+ justify-content: center;
+ 
+}
+
+.label{
+ font-family: "Poppins", sans-serif;
+}
+
+
+@media screen and (max-width:975px){
+#form{
+flex-wrap: wrap;
+display: flex;
+height: 100%;
+width: 100%;
+}
+#main{
+ margin: 0px;
+
+}
+#firstname{
+ width: 135px;
+}
+#email{
+ width: 370px;
+}
+#number{
+ width:286px ;
+}
+#address{
+ width: 373px;
+}
+#street{
+ width: 375px ;
+}
+#city{
+ width:130px ;
+} 
+#state{
+ width:135px ;
+
+}
+#submitbutton{
+margin-right: 100px;
+text-align: center;
+}
+
+
+}
+
+</style>
+<body>
+
+ 
+ <form action="/api/post" method="post">
+  <div id="form">   
+   <div id="main">
+    <H1 id="conference"> QUIZ COMPETITION</H1>
+    
+    <H3 id="Please">Please book your seat by filling the form below</H3>
+   <div id="left">
+   <div id="firstlast" >
+     <label>Name</label>
+     <input type="text" id="firstname" placeholder="First name*"> <input type="text"  id="firstname" placeholder="Last name*">
+    </div>
+    
+    <div>
+      <label>EmailId</label>
+       <input type="email" id="email" placeholder="EmailId*">
+    </div>
+   
+    <div id="number1">
+    <label>Phone number</label>
+     <Select id="country">
+      <OPtion>+91</OPtion>
+      <OPtion>+851</OPtion>
+      <OPtion>+768</OPtion>
+     </Select>
+     <input type="number" id="number" placeholder="your number">
+    </div>
+    <br>
+    <div id="addressall">
+    <LAbel>Address</LAbel>
+      <input type="text" id="address">
+    </div>
+    <br>
+      <div>
+    <label>Street</label>
+      <input type="text" id="street"> 
+    </div>
+    <br>
+      <div id="addresslast">
+       
+    <label>City</label>
+      <input type="text" id="city">
+      <div id="sat">
+    <label id="sta">State</label>
+       <input type="text" id="state"></div>
+      </div>
+      <br>
+      <div>
+    <label>Postal</label>
+       <input type="text" id="code">
+      </Div>
+      <BR></BR> 
+      <div id="button">
+      <button type="submit" id="submitbutton">submit form</button> 
+     </div> 
+    </div>
+    
+  </div>
+    
+
+ </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+
+ <h1>datas</h1>
+ 
+    <div id="form">
+    <tbody>
+        <% user.map((ff)=>{ %>
+            <tr><%= ff.firstname %></tr>
+            <tr><%= ff.lastname %></tr>
+            <tr><%= ff.email %></tr>
+            <tr><%= ff.country %></tr>
+            <tr><%= ff.number %></tr>
+            <tr><%= ff.address %></tr>
+            <tr><%= ff.street %></tr>
+            <tr><%= ff.city %></tr>
+            <tr><%= ff.state %></tr>
+            <tr><%= ff.code %></tr>
+      <%   }) %>
+    </tbody>
+    </div>
+
+</body>
+</html>
